@@ -8,4 +8,10 @@ public class WhiteheadDuck extends Duck{
 		System.out.println("Whitehead");
 	}
 
+	@Override
+	public void quack() {
+		// TODO Auto-generated method stub
+		System.out.println("WhiteWhite");
+	}
+
 }
