@@ -7,5 +7,4 @@ public class MallardDuck extends Duck {
 		// TODO Auto-generated method stub
 		System.out.println("Mallard");
 	}
-
 }
