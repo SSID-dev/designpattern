@@ -1,15 +1,16 @@
-package a_pattern1;
+package a_pattern1.practice;
 
-public class BlueheadDuck extends Duck {
-	public BlueheadDuck() {
+public class WhiteheadDuck extends Duck{
+	public WhiteheadDuck() {
 		// TODO Auto-generated constructor stub
 		fb = new FlyWithWings();
-	
 	}
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub
-		System.out.println("Blue");
+		System.out.println("Whitehead");
 	}
+
+
 
 }

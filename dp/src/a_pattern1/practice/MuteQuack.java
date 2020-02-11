@@ -1,4 +1,4 @@
-package a_pattern1;
+package a_pattern1.practice;
 
 public class MuteQuack implements QuackBehavior{
 
