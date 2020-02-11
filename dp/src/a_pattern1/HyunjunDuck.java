@@ -2,6 +2,12 @@ package a_pattern1;
 
 public class HyunjunDuck extends Duck{
 
+	public HyunjunDuck() {
+		// TODO Auto-generated constructor stub
+		fb = new FlyNoWay();
+		
+	}
+	
 	@Override
 	public void display() {
 		// TODO Auto-generated method stub

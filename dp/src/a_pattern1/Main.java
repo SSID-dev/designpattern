@@ -6,7 +6,15 @@ public class Main {
 		// TODO Auto-generated method stub
 		ModelDuck md = new ModelDuck();
 		
-		md.quack();
+		HyunjunDuck hd = new HyunjunDuck();
+		
+		hd.performFly();
+	
+		BlueheadDuck bd = new BlueheadDuck();
+		
+		bd.performFly();
+				
+	
 	}
 
 }

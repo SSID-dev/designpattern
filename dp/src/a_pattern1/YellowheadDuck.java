@@ -1,6 +1,11 @@
 package a_pattern1;
 
 public class YellowheadDuck extends Duck{
+	
+	public YellowheadDuck() {
+		// TODO Auto-generated constructor stub
+		fb = new FlyWithWings();
+	}
 
 	@Override
 	public void display() {
@@ -8,10 +13,6 @@ public class YellowheadDuck extends Duck{
 		System.out.println("Yellowhead");
 	}
 
-	@Override
-	public void quack() {
-		// TODO Auto-generated method stub
-		System.out.println("YellowYellow");
-	}
+
 
 }

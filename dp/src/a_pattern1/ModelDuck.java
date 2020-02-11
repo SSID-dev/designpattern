@@ -1,6 +1,12 @@
 package a_pattern1;
 
 public class ModelDuck extends Duck{
+	
+	public ModelDuck() {
+		// TODO Auto-generated constructor stub
+		fb = new FlyNoWay();
+	
+	}
 
 	@Override
 	public void display() {
@@ -8,16 +14,7 @@ public class ModelDuck extends Duck{
 		System.out.println("Model");
 	}
 	
-	@Override
-	public void fly() {
-		System.out.println("날지 못해요..");
-	}
 
-	@Override
-	public void quack() {
-		// TODO Auto-generated method stub
-		System.out.println("모델모델");
-	}
 	
 
 }
