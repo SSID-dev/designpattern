@@ -1,18 +1,19 @@
 package a_pattern1;
 
 public abstract class Duck {
+	FlyBehavior fb;
+	QuackBehavior qb;
 	Duck(){
 		
 	}
 	public abstract void display();
-	public void fly() {
-		System.out.println("오리날다");
-	}
-	public void quack() {
-		System.out.println("꽥");
-	}
 	public void swim() {
 		System.out.println("모든 오리는 뜬다. 물오리도 뜬다");
 	}
-	
+	public void performFly() {
+		fb.fly();
+	}
+	public void performQuack() {
+		qb.quack();
+	}
 }
