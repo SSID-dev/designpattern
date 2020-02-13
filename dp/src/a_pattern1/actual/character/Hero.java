@@ -10,7 +10,7 @@ public abstract class Hero {
 	WorkBehavior wb;
 	PlayBehavior pb;
 	
-	int level;
+	int level = 1;
 	
 	public abstract void move();
 	
