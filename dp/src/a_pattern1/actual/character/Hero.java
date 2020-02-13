@@ -14,18 +14,6 @@ public abstract class Hero {
 	
 	public abstract void move();
 	
-	public void levelUp() {
-		level += 1;
-	}
-	
-	public void performWork() {
-		wb.work();
-	}
-	
-	public void performPlay() {
-		pb.play();
-	}
-
 	public void setWb(WorkBehavior wb) {
 		if (wb instanceof SeedingTen || wb instanceof Trackter) { // Todo : 레벨 제한 행동
 			if(level < 10) {
@@ -46,5 +34,18 @@ public abstract class Hero {
 		this.pb = pb;
 	} // end of setPb
 
+	public void performWork() {
+		wb.work();
+		levelUp();
+	}
+
+	public void performPlay() {
+		pb.play();
+		levelUp();
+	}
+
+	private void levelUp() {
+		level += 1;
+	}
 
 } // end of class-Hero
