@@ -1,4 +1,9 @@
-package a_pattern1.actual;
+package a_pattern1.actual.character;
+
+import a_pattern1.actual.behavior.play.Drinking;
+import a_pattern1.actual.behavior.PlayBehavior;
+import a_pattern1.actual.behavior.work.Seeding;
+import a_pattern1.actual.behavior.WorkBehavior;
 
 public abstract class Hero {
 	

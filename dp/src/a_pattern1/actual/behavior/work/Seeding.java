@@ -1,4 +1,6 @@
-package a_pattern1.actual;
+package a_pattern1.actual.behavior.work;
+
+import a_pattern1.actual.behavior.WorkBehavior;
 
 public class Seeding implements WorkBehavior {
 

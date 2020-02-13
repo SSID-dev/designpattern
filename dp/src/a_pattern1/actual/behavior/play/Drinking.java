@@ -1,4 +1,6 @@
-package a_pattern1.actual;
+package a_pattern1.actual.behavior.play;
+
+import a_pattern1.actual.behavior.PlayBehavior;
 
 public class Drinking implements PlayBehavior {
 
