@@ -8,7 +8,7 @@ import a_pattern1.actual.dao.Weather;
 
 public abstract class Hero implements Observer {
 
-	Weather weather;
+	public Weather weather;
 	WorkBehavior wb;
 	PlayBehavior pb;
 
@@ -77,4 +77,14 @@ public abstract class Hero implements Observer {
 		}
 		return false;
 	}
+
+	@Override
+	public void deleteData() {
+		deleteWeatherData();
+	}
+	
+	private void deleteWeatherData() {
+		weather = null;
+	}
+	
 } // end of class-Hero

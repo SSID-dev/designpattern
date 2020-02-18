@@ -16,9 +16,12 @@ public class WeatherData implements Subject{
 
 	@Override
 	public void removeObserver(Observer ob) {
+		
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i) == ob) {
+				list.get(i).deleteData();
 				list.remove(i);
+				System.out.println("제거완료");
 				break;
 			}
 		}
