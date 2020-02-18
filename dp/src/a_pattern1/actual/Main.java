@@ -29,7 +29,7 @@ public class Main {
 		b.performWork();
 		b.setWb(new SeedingTen());
 		b.setPb(new Drinking());
-		
+
 		b.performWork();
     	b.performPlay();
     }
