@@ -8,3 +8,12 @@
 
 ### 실습 - Farming
 <img width="1136" alt="스크린샷 2020-02-12 오후 9 44 29" src="https://user-images.githubusercontent.com/46016511/74336034-e0568100-4de0-11ea-81d5-95dec64a6b1a.png">
+
+
+
+## Pattern2 : Observer Pattern
+
+
+
+### 실습 - Farming에 ObserverPattern 적용하기
+![ObserverPattern_Actual](https://user-images.githubusercontent.com/55870718/75038477-c9f3a800-54f9-11ea-8ca5-0cd38bbdebb2.JPG)
