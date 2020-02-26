@@ -54,7 +54,7 @@ public class Main {
 		}
 		
 		
-		
+		wd.registerObserver(b);
 
 //		// Boy Test - 레벨 10으로 만들겠습니다.
 		b.performWork();

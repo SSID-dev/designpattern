@@ -12,6 +12,6 @@ public class Soil extends FertilizerDecorator{
 	}
 
 	public int fertilize() {
-		return f.power + power;
+		return f.fertilize() + power;
 	}
 }
