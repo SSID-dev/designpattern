@@ -1,10 +1,15 @@
 package a_pattern1.actual;
 
+import a_pattern1.actual.behavior.WorkBehavior;
 import a_pattern1.actual.behavior.play.*;
 import a_pattern1.actual.behavior.work.*;
 import a_pattern1.actual.character.*;
 import a_pattern1.actual.dao.Weather;
 import a_pattern1.actual.observable.WeatherData;
+import fertilizer.Fertilizer;
+import fertilizer.Leave;
+import fertilizer.PigPoo;
+import fertilizer.Soil;
 
 
 public class Main {
@@ -51,12 +56,24 @@ public class Main {
 		
 		
 
-		// Boy Test - 레벨 10으로 만들겠습니다.
+//		// Boy Test - 레벨 10으로 만들겠습니다.
 		b.performWork();
 		b.setWb(new SeedingTen());
 		b.setPb(new Drinking());
 
 		b.performWork();
     	b.performPlay();
+    	wd.setWeather(new Weather(30, 30, 20));
+		Fertilizer f = new PigPoo();
+		f = new Leave(f);
+		f = new Soil(f);
+		
+		System.out.println(f.fertilize());
+		System.out.println(f.getDescription());
+		
+		
+    	b.setWb(new Fertilizing(f));
+    	b.performWork();
+    	
     }
 }

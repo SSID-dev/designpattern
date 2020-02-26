@@ -1,4 +1,4 @@
-package a_pattern1.actual.behavior.work;
+package fertilizer;
 
 public abstract class FertilizerDecorator extends Fertilizer{
 	public abstract String getDescription();
