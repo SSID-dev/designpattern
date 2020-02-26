@@ -11,4 +11,9 @@ public class Fertilizing implements WorkBehavior{
 		System.out.println(f.getDescription());
 		System.out.println(f.fertilize() + "회복되었습니다.");
 	}
+
+	public void setFertilizer(Fertilizer f) {
+		this.f = f;
+	}
+	
 }
